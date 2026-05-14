@@ -1,0 +1,205 @@
+-- Aqui podemos criar instruções SQL DML (Insert, Update, Delete)
+-- Podem haver mais uma instrução, separadas por ponto e vírgula (;)
+
+INSERT INTO regras (minimo_pets, maximo_pets)
+VALUES
+(1, 10);
+
+INSERT INTO raca (codigo, nome)
+VALUES
+('VIRA_LATA', 'Vira Lata'),
+('SIAMES', 'Siamês'),
+('LABRADOR_RETRIEVER', 'Labrador Retriever'),
+('PASTOR_ALEMAO', 'Pastor Alemão'),
+('GOLDEN_RETRIEVER', 'Golden Retriever'),
+('FRENCH_BULLDOG', 'Bulldog Francês'),
+('BULLDOG', 'Bulldogue'),
+('POODLE', 'Poodle'),
+('BEAGLE', 'Beagle'),
+('ROTTWEILER', 'Rottweiler'),
+('POINTER', 'Pointer'),
+('YORKSHIRE_TERRIER', 'Yorkshire Terrier'),
+('BOXER', 'Boxer'),
+('DACHSHUND', 'Dachshund'),
+('SIBERIAN_HUSKY', 'Husky Siberiano'),
+('GREAT_DANE', 'Dogue Alemão'),
+('DOBERMANN', 'Dobermann'),
+('SHIH_TZU', 'Shih Tzu'),
+('AUSTRALIAN_SHEPHERD', 'Australian Shepherd'),
+('POMERANIAN', 'Pomerânia'),
+('BULL_TERRIER', 'Bull Terrier'),
+('CHIHUAHUA', 'Chihuahua'),
+('MALTESE', 'Maltês'),
+('BASSET_HOUND', 'Basset Hound'),
+('CAO_DE_AGUA_PORTUGUES', 'Cão de Água Português'),
+('SAMOYED', 'Samoieda'),
+('BICHON_FRISE', 'Bichon Frisé'),
+('NEWFOUNDLAND', 'Terra Nova'),
+('PAPILLON', 'Papillon'),
+('STAFFORDSHIRE_BULL_TERRIER', 'Staffordshire Bull Terrier'),
+('AKITA', 'Akita'),
+('DALMATIAN', 'Dálmata'),
+('WHIPPET', 'Whippet'),
+('IRISH_SETTER', 'Irish Setter'),
+('COCKER_SPANIEL', 'Cocker Spaniel'),
+('ENGLISH_SPRINGER_SPANIEL', 'Springer Spaniel Inglês'),
+('TIBETAN_MASTIFF', 'Mastim Tibetano'),
+('SHAR_PEI', 'Shar Pei'),
+('BULLMASTIFF', 'Bullmastiff'),
+('BERNESE_MOUNTAIN_DOG', 'Boiadeiro Bernês'),
+('CHOW_CHOW', 'Chow Chow'),
+('KELPIE_AUSTRALIANO', 'Kelpie Australiano'),
+('BRAZILIAN_FILA', 'Fila Brasileiro'),
+('OTTERHOUND', 'Otterhound'),
+('SALUKI', 'Saluki'),
+('BORZOI', 'Barzoi'),
+('PEKINGESE', 'Pequinês'),
+('GREAT_PYRENEES', 'Grande Pirineus'),
+('ANATOLIAN_SHEPHERD', 'Pastor Anatólio'),
+('IRISH_WOLFHOUND', 'Wolfhound Irlandês'),
+('TIBETAN_TERRIER', 'Terrier Tibetano'),
+('PERSA', 'Persa'),
+('SIAMESE', 'Siamês'),
+('MAINE_COON', 'Maine Coon'),
+('RAGDOLL', 'Ragdoll'),
+('SPHYNX', 'Sphynx'),
+('BENGAL', 'Bengal'),
+('ABYSSINIAN', 'Abissínio'),
+('ORIENTAL_SHORTHAIR', 'Oriental'),
+('RUSSIAN_BLUE', 'Azul Russo'),
+('SCOTTISH_FOLD', 'Scottish Fold'),
+('BRITISH_SHORTHAIR', 'British Shorthair'),
+('AMERICAN_SHORTHAIR', 'American Shorthair'),
+('EXOTIC_SHORTHAIR', 'Exotic Shorthair'),
+('TURKISH_ANGORA', 'Angorá Turco'),
+('TURKISH_VAN', 'Van Turco'),
+('NORWEGIAN_FOREST', 'Floresta da Noruega'),
+('SINGAPURA', 'Singapura'),
+('CORNISH_REX', 'Cornish Rex'),
+('DEVON_REX', 'Devon Rex'),
+('BURMESE', 'Burmese'),
+('TONKINESE', 'Tonkinese'),
+('JAPANESE_BOBTAIL', 'Japanese Bobtail'),
+('BALINESE', 'Balinês'),
+('HAVANA_BROWN', 'Havana Brown'),
+('KHAO_MANEE', 'Khao Manee'),
+('SELKIRK_REX', 'Selkirk Rex'),
+('NEBELUNG', 'Nebelung'),
+('SOMALI', 'Somali'),
+('PIXIEBOB', 'Pixie-bob'),
+('OCICAT', 'Ocicat'),
+('CHARTREUX', 'Chartreux'),
+('LAPERM', 'LaPerm'),
+('EGYPTIAN_MAU', 'Egyptian Mau'),
+('RAGAMUFFIN', 'Ragamuffin'),
+('MANX', 'Manx'),
+('TOYGER', 'Toyger'),
+('EUROPEAN_SHORTHAIR', 'European Shorthair'),
+('AUSTRALIAN_MIST', 'Australian Mist'),
+('BURMILLA', 'Burmilla'),
+('BRITISH_LONGHAIR', 'British Longhair'),
+('AMERICAN_BOBTAIL', 'American Bobtail'),
+('KORAT', 'Korat'),
+('PETERBALD', 'Peterbald'),
+('SNOWSHOE', 'Snowshoe'),
+('CALIFORNIA_SPANGLED', 'California Spangled'),
+('SERENGETI', 'Serengeti'),
+('CHAUSIE', 'Chausie'),
+('BOMBAY', 'Bombay'),
+('HIMALAYAN', 'Himalayan'),
+('THAI', 'Thai'),
+('DUTCH_RABBIT', 'Dutch'),
+('HOLLAND_LOP', 'Holland Lop'),
+('NETHERLAND_DWARF', 'Netherland Dwarf'),
+('FLEMISH_GIANT', 'Flemish Giant'),
+('LIONHEAD', 'Lionhead'),
+('MINI_REX', 'Mini Rex'),
+('REX_RABBIT', 'Rex'),
+('ENGLISH_ANGORA', 'English Angora'),
+('FRENCH_LOP', 'French Lop'),
+('AMERICAN_SABLE', 'American Sable'),
+('CANARY', 'Canário'),
+('BUDGERIGAR', 'Periquito'),
+('COCKATIEL', 'Calopsita'),
+('BLUE_MACAW', 'Arara Azul'),
+('CANINDE_MACAW', 'Arara Canindé'),
+('COCKATOO', 'Cacatua'),
+('LOVEBIRD', 'Agapornis'),
+('CONURE', 'Conure'),
+('AMAZON_PARROT', 'Papagaio Amazônico'),
+('AFRICAN_GREY', 'Papagaio do Congo (African Grey)'),
+('PARRAKEET', 'Periquito (Parrakeet)'),
+('TUCAN', 'Tucano'),
+('DOVE', 'Pomba'),
+('SILVER_CHEEKED_TUCAN', 'Tucano Prateado'),
+('FINCH', 'Pintassilgo'),
+('GOLDFINCH', 'Cardeal'),
+('MYNA', 'Myna'),
+('RINGNECK_PARROT', 'Papagaio de Colar'),
+('LORY', 'Lóris'),
+('LOVEBIRD_ROSEICOLLIS', 'Agapornis Roseicollis'),
+('QUAKER_PARROT', 'Quaker'),
+('MACAW_GREENWING', 'Arara de Asa Verde'),
+('MACAW_RED_AND_GREEN', 'Arara Vermelha e Verde'),
+('HYACINTH_MACAW', 'Arara Hyacinth'),
+('LOUISE_TIT', 'Siskin'),
+('SILVER_PHEASANT', 'Faisão Prateado'),
+('PARROTLET', 'Parrotlet'),
+('BUDGERIGAR_FANCY', 'Periquito Fancy'),
+('CANARY_SINGER', 'Canário Cantor'),
+('PARADISE_LOREK', 'Lóris do Paraíso'),
+('PELICAN', 'Pelicano'),
+('KINGFISHER', 'Martim-pescador'),
+('BLACKBIRD', 'Melro'),
+('STARLING', 'Estorninho'),
+('GROSBEAK', 'Cardealito'),
+('HORNBILL', 'Calaú'),
+('RAPTOR_SMALL', 'Falcão Pequeno'),
+('DANISH_SONGTHRUSH', 'Sabiá Dinamarquês'),
+('VULTURE_SMALL', 'Urubu Pequeno'),
+('HOOPOE', 'Upupa'),
+('KAKAPO', 'Kakapo'),
+('KEA', 'Kea'),
+('LOON', 'Mergulhão'),
+('WREN', 'Carrinho'),
+('NIGHTINGALE', 'Rouxinol'),
+('WOODPECKER', 'Pica-pau'),
+('SILVERPARROT', 'Papagaio Prateado'),
+('TIT', 'Chapim');
+
+
+INSERT INTO especie (codigo, nome)
+VALUES
+('CAO', 'Cachorro'),
+('GATO', 'Gato'),
+('PASSARO', 'Pássaro'),
+('ROEDOR', 'Roedor'),
+('REPTIL', 'Réptil');
+
+
+INSERT INTO pet (nome_pet, nome_dono, especie_codigo, raca_codigo, email_dono, peso, altura, nascimento, validade_chip, cpf_dono, telefone_dono, ativo) VALUES
+('Fido', 'João Silva', 'CAO', 'VIRA_LATA', 'joao.silva@example.com', 15.5, 0.5, '2020-01-15', '2030-01-15', '12345678901', '(11) 98765-4321', true),
+('Miau', 'Maria Souza', 'GATO', 'SIAMES', 'maria.souza@example.com', 4.2, 0.25, '2021-05-20', '2031-05-20', '10987654321', '(21) 91234-5678', true),
+('Piu', 'Carlos Pereira', 'PASSARO', 'PERSA', 'carlos.pereira@example.com', 0.1, 0.1, '2022-02-10', '2032-02-10', '56789012345', '(31) 99999-8888', false),
+('Rex', 'Ana Costa', 'CAO', 'PASTOR_ALEMAO', 'ana.costa@example.com', 30.0, 0.7, '2019-11-30', '2029-11-30', '98765432109', '(41) 98888-7777', true)
+,('Bella', 'Lucas Souza', 'CAO', 'LABRADOR_RETRIEVER', 'lucas.souza@example.com', 25.0, 0.6, '2018-06-10', '2028-06-10', '11122233344', '(11) 91234-0001', true)
+,('Fifi', 'Mariana Silva', 'GATO', 'MAINE_COON', 'mariana.silva@example.com', 4.5, 0.3, '2020-09-05', '2030-09-05', '22233344455', '(21) 92345-0002', true)
+,('Tico', 'Roberto Almeida', 'PASSARO', 'TUCAN', 'roberto.almeida@example.com', 0.2, 0.2, '2021-03-12', '2031-03-12', '33344455566', '(31) 93456-0003', false)
+,('Luna', 'Carla Souza', 'GATO', 'RAGDOLL', 'carla.souza@example.com', 3.8, 0.25, '2019-12-01', '2029-12-01', '44455566677', '(41) 94567-0004', true)
+,('Bolt', 'Paulo Silva', 'CAO', 'POODLE', 'paulo.silva@example.com', 8.3, 0.45, '2022-07-20', '2032-07-20', '55566677788', '(51) 95678-0005', true)
+,('Miau', 'Ana Costa', 'GATO', 'SIAMESE', 'ana.costa@example.com', 4.0, 0.24, '2021-05-20', '2031-05-20', '66677788899', '(11) 96789-0006', true)
+,('Fido', 'João Silva', 'CAO', 'VIRA_LATA', 'joao.silva@example.com', 16.0, 0.52, '2020-01-15', '2030-01-15', '77788899900', '(21) 97890-0007', true)
+,('Nina', 'Sofia Pereira', 'GATO', 'BENGAL', 'sofia.pereira@example.com', 5.1, 0.28, '2022-11-11', '2032-11-11', '88899900011', '(31) 98901-0008', false)
+,('Rex', 'Ana Costa', 'CAO', 'BOXER', 'ana.costa@example.com', 28.0, 0.68, '2019-11-30', '2029-11-30', '98765432109', '(41) 98888-7777', true)
+,('Pipoca', 'Bruno Lima', 'ROEDOR', 'MINI_REX', 'bruno.lima@example.com', 1.2, 0.30, '2023-04-01', '2033-04-01', '99900011122', '(51) 99012-0009', true)
+,('Kiki', 'Fernanda Souza', 'PASSARO', 'CANARY', 'fernanda.souza@example.com', 0.05, 0.08, '2021-08-08', '2031-08-08', '00011122233', '(11) 90123-0010', false)
+,('Zeus', 'Miguel Santos', 'CAO', 'DOBERMANN', 'miguel.santos@example.com', 35.0, 0.75, '2017-02-02', '2027-02-02', '11133344455', '(21) 91200-0011', true)
+,('Milu', 'Patricia Gomes', 'GATO', 'PERSA', 'patricia.gomes@example.com', 3.2, 0.22, '2020-10-10', '2030-10-10', '22244455566', '(31) 92300-0012', true)
+,('Fifo', 'Carlos Souza', 'CAO', 'BULL_TERRIER', 'carlos.souza@example.com', 24.5, 0.55, '2018-01-01', '2028-01-01', '33355566677', '(41) 93400-0013', true)
+,('Miau', 'Luciana Rocha', 'GATO', 'SIAMESE', 'luciana.rocha@example.com', 4.6, 0.26, '2021-06-06', '2031-06-06', '44466677788', '(51) 94500-0014', true)
+,('Thor', 'Roberto Almeida', 'CAO', 'GREAT_DANE', 'roberto.almeida@example.com', 50.0, 0.85, '2016-05-05', '2026-05-05', '55577788899', '(11) 95600-0015', true)
+,('Piu', 'Carlos Pereira', 'PASSARO', 'PARRAKEET', 'carlos.pereira@example.com', 0.12, 0.09, '2022-02-10', '2032-02-10', '56789012345', '(31) 99999-8888', false)
+,('Lulu', 'Marcos Silva', 'GATO', 'BRITISH_SHORTHAIR', 'marcos.silva@example.com', 5.0, 0.27, '2019-09-09', '2029-09-09', '66688899900', '(21) 96700-0016', true)
+,('Bella', 'Lucas Souza', 'CAO', 'GOLDEN_RETRIEVER', 'lucas.souza@example.com', 28.0, 0.62, '2018-06-10', '2028-06-10', '77799900011', '(11) 91234-0001', true)
+,('Coco', 'Rafael Silva', 'PASSARO', 'MACAW_RED_AND_GREEN', 'rafael.silva@example.com', 1.0, 0.33, '2020-03-03', '2030-03-03', '88800011122', '(31) 99800-0017', true);
+;
