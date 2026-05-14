@@ -46,7 +46,28 @@ jobs:
           # ARGS para rsync: -rltgoDzvO para cópia recursiva, compressão e outros
           ARGS: "-rltgoDzvO --delete" 
           # SOURCE: O que será copiado. Pode ser o diretório de build (ex: ./dist)
-          SOURCE: "./projeto-frontend-pets/dist/" 
+          SOURCE: "./projeto-frontend-pets/dist/"
+
+      # 4.1. Copiar docker-compose.yml do frontend para a EC2
+      - name: FE - Copiar docker-compose.yml para EC2
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ubuntu
+          TARGET: /home/ubuntu/docker/
+          ARGS: "-rltgoDzvO"
+          SOURCE: "./projeto-frontend-pets/docker-compose.yml"
+
+      # 4.2. Subir o nginx via docker-compose na EC2
+      - name: FE - Iniciar Nginx via Docker Compose
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            docker compose -f /home/ubuntu/docker/docker-compose.yml up -d --force-recreate
 
 
       ############ BACK-END ############
