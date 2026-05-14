@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main # O branch que acionará o deploy
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch para executar o workflow'
+        required: true
+        default: 'main'
 
 jobs:
   build_FE_BE:
