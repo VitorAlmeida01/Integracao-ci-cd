@@ -45,7 +45,7 @@ function PetsList() {
 
   return (
     <div className="pets-container">
-      <h1>Pets Quisitos</h1>
+      <h1>Catálogo de Pets</h1>
       
       <div className="search-box">
         <input
@@ -71,7 +71,7 @@ function PetsList() {
           }} 
           className="list-all-button"
         >
-          Listar Todoss
+          Listar Todos
         </button>
       </div>
 
