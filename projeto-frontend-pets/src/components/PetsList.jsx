@@ -71,7 +71,7 @@ function PetsList() {
           }} 
           className="list-all-button"
         >
-          Listar Todos
+          Listar Todoss
         </button>
       </div>
 
