@@ -1,10 +1,10 @@
 services:
-  web:
-    image: nginx
+  nginx:
+    image: nginx:stable
+    container_name: servidor-http
     ports:
       - "80:80"
     volumes:
-      # O lado esquerdo é a sua pasta local (onde está o seu build)
-      # O lado direito é o caminho interno do container Nginx
       - /home/ubuntu/frontend:/usr/share/nginx/html:ro
-    restart: always
+      - /home/ubuntu/docker/nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: unless-stopped

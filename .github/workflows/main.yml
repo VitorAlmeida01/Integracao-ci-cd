@@ -67,7 +67,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            docker compose -f /home/ubuntu/docker/compose-nginx.yml up -d --force-recreate
+            docker compose -f /home/ubuntu/docker/docker-compose.yml up -d --force-recreate
 
 
       ############ BACK-END ############
